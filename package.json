@@ -1,0 +1,29 @@
+{
+  "name": "the-nft-way",
+  "version": "1.0.0",
+  "description": "TheNFTway marketplace, is an opensource and decentralized Non-Fungible ERC-721 Marketplace built over the ethereum chain, and eases the the process of buying and selling collectibles, arts and digitized futures.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zevocorporation/the-nft-way.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zevocorporation/the-nft-way/issues"
+  },
+  "homepage": "https://github.com/zevocorporation/the-nft-way#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.22.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7"
+  }
+}
