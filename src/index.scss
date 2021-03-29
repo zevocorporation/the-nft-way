@@ -1,0 +1,28 @@
+@font-face{
+  src: url(./assets/fonts/Gilroy-Regular.ttf);
+  font-family: 'Gilroy-Regular';
+}
+
+$primary: #1A79E8;
+$blackPrimary: #293341;
+$blackSeconadry: #465364;
+$label: #ABB2BD;
+$timer: #FE7676;
+$textbox: #F7F9FA;
+$success: #18B858;
+$error: #FF5555;
+$warning: #FAC53C;
+$background: #FEFEFE;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #E5E5E5;
+  font-family: 'Gilroy-Regular';
+}
+
+

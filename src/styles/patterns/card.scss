@@ -1,0 +1,53 @@
+$primary: #1A79E8;
+$blackPrimary: #293341;
+$blackSeconadry: #465364;
+$label: #ABB2BD;
+
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px -5px 30px rgba(0, 106, 229, 0.02), 0px 5px 13px rgba(0, 106, 229, 0.03);
+    border-radius: 5px;
+    width: 280px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+}
+
+.card .avatar-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .avatar-block .block{
+    display: flex;
+    align-items: center;
+    grid-gap: 0.3em;
+}
+
+.card .avatar-block .block  p:nth-child(1){
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: #9FA1A6;
+    margin-bottom: 0.3em;
+}
+
+.card .content{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+}
+
+.card .content h3{
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #293341;
+}
+
+.card .content .block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

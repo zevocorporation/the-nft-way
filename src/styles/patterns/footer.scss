@@ -1,0 +1,38 @@
+$primary: #1A79E8;
+$blackPrimary: #293341;
+$balckSeconadry: #465364;
+$label: #ABB2BD;
+$timer: #FE7676;
+$textbox: #F7F9FA;
+
+.footer{
+    background: #fff;
+    padding: 20px 50px;
+}
+
+.footer .footer-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-one .block-left{
+    display: flex;
+    align-items: center;
+    grid-gap: 3.5em;
+}
+
+.footer .footer-one .block-left .footer-logo{
+    width: 200px;
+}
+
+.footer .footer-one .block-left nav{
+    display: flex;
+    align-items: center;
+    grid-gap: 1em;
+}
+.footer .footer-one .block-right{
+    display: flex;
+    align-items: center;
+    grid-gap: 1.6em;
+}

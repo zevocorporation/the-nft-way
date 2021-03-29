@@ -1,0 +1,57 @@
+$primary: #1A79E8;
+$blackPrimary: #293341;
+$blackSeconadry: #465364;
+$label: #ABB2BD;
+// $timer: #FE7676;
+// $textbox: #F7F9FA;
+// $success: #18B858;
+// $error: #FF5555;
+// $warning: #FAC53C;
+// $background: #FEFEFE;
+
+.home{
+    padding: 0 50px;
+}
+
+.home .title-header{
+    padding: 30px 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .title-header > div{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1em;
+}
+
+.home .title-header > div p:nth-child(2){
+    width: 70%;
+}
+
+.home .craft{
+    width: 90%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.home .craft h2{
+    font-size: 45px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 1em;
+}
+
+.home .craft p{
+    width: 70%;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #293341;
+    margin: 0 auto;
+
+}
