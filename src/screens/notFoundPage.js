@@ -24,6 +24,7 @@ const NotFoundPage = () => {
             margin:'0 auto'
         }
     }
+    
     return (
         <div style={Styles.grid}>
            <img src={notfound} alt="404 not found" style={Styles.image} />

@@ -7,8 +7,11 @@ import Card from '../patterns/card'
 
 import Cards from '../data/cards.json'
 
+import Footer from '../patterns/footer'
+
 //Importing components
 import { Button } from '../components'
+import Form from '../patterns/form'
 
 
 
@@ -65,11 +68,15 @@ const Home = () => {
     )
 
     return (
+        <>
         <div className="home">
             {renderHeader}
             {renderCard}
             {renderCraft}
+            <Form />
         </div>
+        <Footer />
+        </>
     )
 }
 
