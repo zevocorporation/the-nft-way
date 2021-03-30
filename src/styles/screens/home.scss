@@ -52,6 +52,32 @@ $label: #ABB2BD;
     text-align: center;
     letter-spacing: 0.05em;
     color: #293341;
-    margin: 0 auto;
+    margin: 0 auto 1em;
 
+}
+
+.home .card-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: auto;
+    grid-row-gap: 2em;
+}
+
+@media (max-width:768px){
+    .home{
+        padding: 0 30px;
+    }
+    .home .craft{
+        width: 100%;
+    }
+    .home .craft p{
+        width: 85%;
+    }
+}
+
+@media (max-width:576){
+    .home{
+        padding: 0 20px;
+    }
 }

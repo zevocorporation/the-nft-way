@@ -1,8 +1,17 @@
 import React from 'react'
-import Card from '../patterns/card'
 
 //Importing styles
 import '../styles/screens/home.scss'
+
+import Card from '../patterns/card'
+
+import Cards from '../data/cards.json'
+
+//Importing components
+import { Button } from '../components'
+
+
+
 
 const Home = () => {
 
@@ -32,12 +41,26 @@ const Home = () => {
                 We’re bringing digital creators, crypto natives, 
                 and collectors together to move culture forward.
             </p>
+            <Button className="primary">Sell your craft on Absolute NFT</Button>
         </div>
     )
 
     const renderCard=(
         <div className="card-container">
-            <Card />
+            {
+                Cards.map((card,index) => {
+                    return (
+                        <Card 
+                            key={index} 
+                            createdBy={card.createdBy}
+                            ownedBy={card.ownedBy}
+                            title={card.title} 
+                            eth={card.eth}
+                            expires={card.expires}
+                        />
+                    )
+                })
+            }
         </div>
     )
 

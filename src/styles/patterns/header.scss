@@ -61,13 +61,37 @@ $textbox: #F7F9FA;
     margin-left: 1.25em;
 }
 
-.header .navbar button{
-    color: #fff;
-    padding: 0.6em 1em;
-    border: none;
-    outline: none;
-    background: $blackPrimary;
-    border-radius: 100px;
-    margin-left: 1.8em;
-    font-size: 1em;
+.header .hamburger{
+    display: none;
+}
+
+.header .hamburger button{
+    margin-right: 1.6em;
+}
+ 
+@media (max-width:768px){
+    .header{
+        padding: 0 30px;
+    }
+    .header .search-input,
+    .header .navbar{
+        display: none;
+    }
+    .header .hamburger{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+@media (max-width:576px){
+    .header{
+        padding: 0 20px;
+    }
+    .header .logo{
+        width: 150px;
+    }
+    .secondary{
+        font-size: 12px;
+    }
 }

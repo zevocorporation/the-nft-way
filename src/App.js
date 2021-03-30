@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Header from './patterns/header';
 import Footer from './patterns/footer';
 import Home from './screens/home';
+import NotFoundPage from './screens/notFoundPage'
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
             <Route path="/" exact>
                 <Home />
             </Route>
+            <Route component={NotFoundPage}></Route>
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
     </Router>
   );
 }

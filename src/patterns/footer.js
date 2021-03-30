@@ -33,9 +33,18 @@ const Footer = () => {
            </div>
         </div>
     )
+
+    const renderRights = (
+        <div className="footer-two">
+            <p>© 2020 THENFTWAY. All rights reserved</p>
+            <p>Developed and maintained by ZEVO CORPORATION</p>
+        </div>
+    )
+
     return (
         <div className="footer">
             {renderFooter}
+            {renderRights}
         </div>
     )
 }

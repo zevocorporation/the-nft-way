@@ -4,13 +4,13 @@ const Button = (props) => {
 
     const Styles={
         fontFamily:'Gilroy-Regular',
-        fontSize:'1em',
         ...props.style
     }
 
     return (
         <button
             onClick={props.onClick}
+            className={props.className}
             style={Styles}
         >
             {props.children}

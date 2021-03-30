@@ -36,3 +36,37 @@ $textbox: #F7F9FA;
     align-items: center;
     grid-gap: 1.6em;
 }
+
+.footer .footer-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $balckSeconadry;
+    font-size: 1em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+@media (max-width:768px){
+    .footer .footer-one .block-left .footer-logo{
+        display: none;
+    }
+}
+
+@media (max-width:576px){
+    .footer .footer-one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-row-gap: 1em;
+    }
+    .footer .footer-one .block-right{
+        font-size: 0.8em;
+    }
+    .footer .footer-two{
+        flex-direction: column;
+        font-size: 0.8em;
+        grid-gap: 0.7em;
+    }
+}

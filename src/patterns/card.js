@@ -12,21 +12,29 @@ import history from '../assets/icons/history.svg'
 import avatar from '../assets/images/avatar.svg'
 import card from '../assets/images/card.svg'
 
-const Card = () => {
+const Card = (props) => {
 
+
+    const Styles={
+        flex:{
+            display:'flex',
+            alignItems:'center',
+            gridGap:'0.4em'
+        }
+    }
     const renderAvatar=(
         <div className="avatar-block">
             <div className="block block-left">
                 <Avatar src={avatar} alt="createdBy Avatar" />
                 <div>
                     <p>Created by</p>
-                    <p>#123456</p>
+                    <p>{props.createdBy}</p>
                 </div>
             </div>
             <div className="block block-right">
                 <div>
                     <p>Owned by</p>
-                    <p>#123456</p>
+                    <p>{props.ownedBy}</p>
                 </div>
                 <Avatar src={avatar} alt="ownedBy Avatar" />
             </div>
@@ -35,24 +43,24 @@ const Card = () => {
 
     const renderContent=(
         <div className="content">
-            <h3>The Roman</h3>
+            <h3>{props.title}</h3>
             <div  className="block">
-                <p>curren bid ETH 5.89</p>
-                <p>= $ 11.,559</p>
+                <p>curren bid <span className="coin">ETH {props.eth}</span></p>
+                <p className="coin">= $ 11.,559</p>
             </div>
             <div  className="block">
                 <p>Bid ending in</p>
-                <p>12h 24m 36s</p>
+                <p>{props.expires}</p>
             </div>
             <div  className="block">
-                <p><Icon src={history} alt="history" /><span>View History</span></p>
-                <Button>Place Bid</Button>
+                <p style={Styles.flex}><Icon src={history} alt="history" /><span>View History</span></p>
+                <Button className="primary">Place Bid</Button>
             </div>
         </div>
     )
 
     return (
-        <div className="card">
+        <div className="card" key={props.key}>
             {renderAvatar}
             <img src={card} alt="card" width={'100%'} />
             {renderContent}
